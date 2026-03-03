@@ -9,8 +9,8 @@ const subjects = [
 ];
 
 const getColor = (attendance) => {
-  if (attendance > 75) return "bg-green-300";
-  if (attendance >= 60) return "bg-yellow-300";
+  if (attendance > 75) return "bg-green-400";
+  if (attendance >= 60) return "bg-yellow-400";
   return "bg-red-300";
 };
 
@@ -18,9 +18,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Navigation Bar */}
-      <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
+      <nav className="bg-green-600 text-white p-4  text-center">
         <div>
-          <h1 className="text-xl font-bold">Student Attendance Dashboard</h1>
+          <h1 className="text-xl font-bold mb-2">Student Attendance Dashboard</h1>
         </div>
         <div className="text-sm">
           <p>Student Name: Md Asar</p>
